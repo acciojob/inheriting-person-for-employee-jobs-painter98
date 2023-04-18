@@ -5,12 +5,12 @@ function Person(name, age) {
 	}
 }
 
-function Employee(name, age, jobTitle) extends Person {
+function Employee(name, age, jobTitle){
 	jobGreet(){
 		console.log(`Hello, my name is ${name}, I am ${age} years old, and my job title is ${jobTitle}`);
 	}
 }
-Employee.prototype = Object.create(Person.prototype);
+Employee.prototype = new Person();
 
 // Do not change code below this line
 window.Person = Person;
