@@ -1,7 +1,7 @@
 // complete this js code
 function Person(name, age){
 	greet(){
-		console.log('Hello, my name is '+ name+ ' I am ${age} years old.);
+		console.log('Hello, my name is '+ name+ ' I am '+age+' years old.');
 	}
 }
 
