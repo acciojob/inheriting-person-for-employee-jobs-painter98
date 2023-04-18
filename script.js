@@ -10,7 +10,7 @@ function Employee(name, age, jobTitle) extends Person {
 		console.log(`Hello, my name is ${name}, I am ${age} years old, and my job title is ${jobTitle}`);
 	}
 }
-Employee.prototype = Person.prototype;
+Employee.prototype = Object.create(Person.prototype);
 
 // Do not change code below this line
 window.Person = Person;
