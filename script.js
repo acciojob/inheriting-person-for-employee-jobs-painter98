@@ -1,13 +1,13 @@
 // complete this js code
-function Person(name, age) {
+function Person(name, age){
 	greet(){
-		console.log(`Hello, my name is ${name}, I am ${age} years old.`);
+		console.log('Hello, my name is '+ name+ ' I am ${age} years old.);
 	}
 }
 
 function Employee(name, age, jobTitle){
 	jobGreet(){
-		console.log(`Hello, my name is ${name}, I am ${age} years old, and my job title is ${jobTitle}`);
+		console.log('Hello, my name is '+ name+' I am '+ age+' years old, and my job title is '+ jobTitle);
 	}
 }
 Employee.prototype = new Person();
