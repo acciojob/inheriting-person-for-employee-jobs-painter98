@@ -1,21 +1,16 @@
 // complete this js code
 function Person(name, age) {
-	this.name=name;
-	this.age=age;
-	this.greet=()=>{
+	greet(){
 		console.log(`Hello, my name is ${name}, I am ${age} years old.`);
 	}
-	
 }
 
 function Employee(name, age, jobTitle) extends Person {
-	this.name=name;
-	this.age=age;
-	this.jobTitle=jobTitle;
-	this.jobGreet=()=>{
+	jobGreet(){
 		console.log(`Hello, my name is ${name}, I am ${age} years old, and my job title is ${jobTitle}`);
 	}
 }
+Employee.prototype = Person.prototype;
 
 // Do not change code below this line
 window.Person = Person;
